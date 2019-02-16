@@ -1,0 +1,16 @@
+<div>
+    <h1>All Uploads</h1>
+    <div>
+    <ul>
+    <% if @uploads != [] %>
+        <% @uploads.each do |upload| %>
+        <li>
+            <%= upload.files[0].filename %>
+        </li>
+        <% end %>
+        <% else %>
+        <h2> No uploads yet </h2>
+    <% end %>
+    </ul>
+    </div>
+</div>
