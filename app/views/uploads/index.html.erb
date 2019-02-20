@@ -1,0 +1,17 @@
+<div>
+    <h1>All Uploads</h1>
+    <div>
+    <ul class="collection with-header">
+    <% if @uploads != [] %>
+        <% @uploads.each do |upload| %>
+        <li class="collection-item">
+            <%= upload.files[0].filename %>
+            <%= link_to 'download', rails_blob_path(upload.files[0], disposition: "attachment") %>
+        </li>
+        <% end %>
+        <% else %>
+        <h2> No uploads yet </h2>
+    <% end %>
+    </ul>
+    </div>
+</div>
