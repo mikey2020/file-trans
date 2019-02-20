@@ -6,10 +6,10 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-   ## ruby 2.5.1p57 (2018-03-29 revision 63029)
+    ### ruby 2.5.1
 
 * System dependencies
- - Make sure you have a GCP account and credentials
+   - Make sure you have a GCP account and credentials
 
 * Configuration
   - git clone `https://github.com/mikey2020/file-trans`
