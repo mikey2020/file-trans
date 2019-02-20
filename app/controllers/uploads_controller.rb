@@ -22,18 +22,6 @@ class UploadsController < ApplicationController
       end
     end
   end
-  
-  # def upload
-  #   uploaded_io = upload_params
-  #   puts uploaded_io
-  #   File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'wb') do |file|
-  #     file.write(uploaded_io.read)
-  #   end
-  #   @upload = Upload.new(upload_params)
-  #   @upload.save
-
-  #   redirect_to @upload
-  # end
 
   private
     def upload_params

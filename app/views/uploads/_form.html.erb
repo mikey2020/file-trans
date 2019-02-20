@@ -1,9 +1,21 @@
-<%= form_with model: upload, local: true do |form| %>
-    <div class="field">
-      <%= form.file_field :files, multiple: true, direct_upload: true %>
-   </div>
+<div class="container">
 
-    <div class="actions">
-        <%= form.submit %>
-    </div>
-<% end %>
+    <%= form_with model: upload, local: true do |form| %>
+        <div class="section">
+            <div class="field">
+              <%= form.file_field :files, multiple: true, direct_upload: true %>
+           </div>
+        </div>
+
+        
+
+        <div class="waves-effect waves-light btn">
+            <%= form.submit %>
+        </div>
+
+    <% end %>
+
+    <%= link_to 'Back', uploads_path %>
+
+
+</div>
